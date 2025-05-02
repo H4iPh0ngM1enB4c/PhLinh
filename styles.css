@@ -1,0 +1,130 @@
+/* Spotify Search Styling */
+.spotify-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 10px;
+  color: white;
+}
+
+.spotify-container h2 {
+  color: #1DB954;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  font-size: 16px;
+  background: #282828;
+  color: white;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background: #1DB954;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background: #1ed760;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 15px;
+  background: #282828;
+  border: none;
+  border-radius: 50px;
+  color: #b3b3b3;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: #1DB954;
+  color: white;
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.track-item {
+  background: #282828;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.track-item:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+.track-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.track-info {
+  padding: 15px;
+}
+
+.track-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-artist {
+  color: #b3b3b3;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 30px;
+  color: #b3b3b3;
+  font-size: 18px;
+}
+
+/* Fix profile-card hover effect */
+.profile-card {
+  border: 2.5px solid transparent;
+  transition: all 0.5s ease, border-color 0.5s ease;
+}
+
+.profile-card:hover {
+  border-color: #FF9A3C;
+} 
