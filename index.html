@@ -122,7 +122,7 @@
           if (data.success) {
             const d = data.data;
             // Avatar
-            let avatarUrl = 'avartar.jpg'; // Fallback to default avatar
+            let avatarUrl = `https://cdn.discordapp.com/avatars/${d.discord_user.id}/${d.discord_user.avatar}.${ext}?size=80&time=${Date.now()}`; // Fallback to default avatar
             if (d.discord_user && d.discord_user.avatar) {
               let ext = d.discord_user.avatar.startsWith('a_') ? 'gif' : 'png';
               avatarUrl = `https://cdn.discordapp.com/avatars/${d.discord_user.id}/${d.discord_user.avatar}.${ext}?size=80`;
